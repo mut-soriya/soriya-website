@@ -1,22 +1,22 @@
 {
-    "email": "soriya.mut@example.com",
-    "emailDisplay": "soriya.mut@example.com",
+    "email": "mut.soriya467@gmail.com",
+    "emailDisplay": "mut.soriya467@gmail.com",
     "socials": [
         {
             "name": "GitHub",
-            "url": "",
+            "url": "https://github.com/mut-soriya",
             "icon": "github",
             "label": "GitHub"
         },
         {
             "name": "LinkedIn",
-            "url": "",
+            "url": "https://www.linkedin.com/in/soriya-mut-b98184429/",
             "icon": "linkedin",
             "label": "LinkedIn"
         },
         {
             "name": "Telegram",
-            "url": "",
+            "url": "https://t.me/Ya_battambang",
             "icon": "telegram",
             "label": "Telegram"
         }

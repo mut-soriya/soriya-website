@@ -3,6 +3,13 @@
     "sectionSubtitle": "A growing collection of study sessions, practical work, and small wins.",
     "timeline": [
         {
+            "year": "2025",
+            "title": "Bacll — National Examination",
+            "subtitle": "Got best results for the exam",
+            "description": "Successfully achieved Grade A in the Cambodian National Examination.",
+            "current": true
+        },
+        {
             "year": "2026 — PRESENT",
             "title": "Passerelles Numériques Cambodia",
             "subtitle": "IT / WEB DEVELOPMENT",

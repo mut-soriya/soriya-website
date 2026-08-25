@@ -15,7 +15,7 @@
   "aboutTitle": "LEARNING OUT LOUD",
   "aboutIntro": "A student workspace powered by curiosity, practical notes, and small builds that add up.",
   "aboutText": "My name is Soriya Mut. I am an IT student at Passerelles Numériques Cambodia. I learn best by turning a new idea into a small experiment, a useful interface, or a clearer question. My focus is web development, programming, software quality, and building a steady practice around technology.",
-  "profileImage": "",
+  "profileImage": "https://i.ibb.co/bjWvFddG/profile-image.jpg",
   "profileAlt": "Soriya Mut — Web Developer and active learner",
   "heroTags": ["HTML", "CSS", "JS", "PYTHON"],
   "aboutCards": [

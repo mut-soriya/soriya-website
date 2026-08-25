@@ -5,7 +5,7 @@
     {
       "title": "Student Study Management System",
       "description": "A focused web application for organizing learning activities, tracking progress, and planning study schedules.",
-      "image": "",
+      "image": "https://static.wixstatic.com/media/049da3_f8527a87fd184602ac57bf94888e2fef~mv2.png",
       "technologies": ["HTML", "CSS", "JavaScript", "Flask"],
       "status": "Completed",
       "github": "",
@@ -14,7 +14,7 @@
     {
       "title": "Portfolio Study Space",
       "description": "A playful personal study portfolio built with vanilla HTML, CSS, JavaScript, and JSON-driven content.",
-      "image": "",
+      "image": "https://i.ibb.co/KcDfVy0j/generated-20260825-T090514-Z-1.png",
       "technologies": ["HTML", "CSS", "JavaScript", "JSON"],
       "status": "Completed",
       "github": "",
@@ -23,7 +23,7 @@
     {
       "title": "Library Management System",
       "description": "A database learning project for organizing books, members, and borrowing workflows with clear user flows.",
-      "image": "",
+      "image": "https://www.pixel-studios.com/blog/wp-content/uploads/2018/12/012-1200x600.jpg",
       "technologies": ["Python", "Flask", "SQL"],
       "status": "In Progress",
       "github": "",
