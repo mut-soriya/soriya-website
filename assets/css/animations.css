@@ -1,0 +1,448 @@
+/* ============================================
+   SORIYA.SYS — PORTFOLIO V2
+   animations.css — Keyframes & Animation Classes
+   ============================================ */
+
+/* ===== KEYFRAMES ===== */
+
+/* Pulse dot */
+@keyframes pulse-dot {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.3);
+    }
+}
+
+/* Blink cursor */
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+/* Scanline */
+@keyframes scanline {
+    0% {
+        top: 0;
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.6;
+    }
+    90% {
+        opacity: 0.6;
+    }
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+/* Scroll down indicator */
+@keyframes scroll-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(200%);
+    }
+}
+
+/* HUD bar animation */
+@keyframes hud-bar {
+    0%, 100% {
+        width: 50%;
+        opacity: 0.6;
+    }
+    50% {
+        width: 85%;
+        opacity: 1;
+    }
+}
+
+/* Bounce dot */
+@keyframes bounce-dot {
+    0%, 80%, 100% {
+        transform: scale(0.6);
+        opacity: 0.4;
+    }
+    40% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Float particles */
+@keyframes float-particle {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.6;
+    }
+    90% {
+        opacity: 0.4;
+    }
+    100% {
+        transform: translate(var(--tx, 20px), var(--ty, -60px));
+        opacity: 0;
+    }
+}
+
+/* Blob movement */
+@keyframes blob-move-1 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    33% {
+        transform: translate(60px, 40px) scale(1.1);
+    }
+    66% {
+        transform: translate(-30px, 80px) scale(0.9);
+    }
+}
+
+@keyframes blob-move-2 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    33% {
+        transform: translate(-50px, -40px) scale(0.9);
+    }
+    66% {
+        transform: translate(40px, -80px) scale(1.1);
+    }
+}
+
+@keyframes blob-move-3 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    50% {
+        transform: translate(80px, -60px) scale(1.15);
+    }
+}
+
+/* Fade in up */
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade in */
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Slide in left */
+@keyframes slide-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Slide in right */
+@keyframes slide-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Scale in */
+@keyframes scale-in {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Boot line appear */
+@keyframes boot-line-appear {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Name reveal clip */
+@keyframes name-reveal {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        filter: blur(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+/* Stagger card */
+@keyframes stagger-card {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Spin */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Glow pulse */
+@keyframes glow-pulse {
+    0%, 100% {
+        box-shadow: 0 0 20px var(--glow-purple);
+    }
+    50% {
+        box-shadow: 0 0 40px var(--glow-purple);
+    }
+}
+
+/* Typewriter (for terminal) */
+@keyframes typewriter-cursor {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+/* Grid drift */
+@keyframes grid-drift {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(60px, 60px);
+    }
+}
+
+/* Terminal text appear */
+@keyframes terminal-text-appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Shimmer */
+@keyframes shimmer {
+    0% {
+        background-position: -200% center;
+    }
+    100% {
+        background-position: 200% center;
+    }
+}
+
+/* Border rotate (for profile frame glow) */
+@keyframes border-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes study-drift {
+    0%, 100% { transform: translate3d(0, 0, 0) rotate(-8deg); }
+    50% { transform: translate3d(-8px, -12px, 0) rotate(-5deg); }
+}
+
+@keyframes study-drift-reverse {
+    0%, 100% { transform: translate3d(0, 0, 0) rotate(7deg); }
+    50% { transform: translate3d(9px, -8px, 0) rotate(10deg); }
+}
+
+@keyframes accent-sweep {
+    0%, 100% { background-position: 0% 50%; opacity: .7; }
+    50% { background-position: 100% 50%; opacity: 1; }
+}
+
+@keyframes profile-pulse {
+    0%, 100% { box-shadow: 0 20px 52px rgba(3, 7, 23, .32), inset 0 1px 0 rgba(255,255,255,.06); }
+    50% { box-shadow: 0 24px 62px rgba(3, 7, 23, .38), 0 0 26px var(--glow-cyan), inset 0 1px 0 rgba(255,255,255,.1); }
+}
+
+@keyframes logo-signal {
+    0%, 100% { opacity: .65; transform: scale(.9) rotate(0deg); }
+    50% { opacity: 1; transform: scale(1.15) rotate(18deg); }
+}
+
+@keyframes decor-float {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(0, -10px, 0); }
+}
+
+/* ===== ANIMATION CLASSES ===== */
+
+/* Background blob animations */
+.bg-blob--1 {
+    animation: blob-move-1 20s ease-in-out infinite;
+}
+
+.bg-blob--2 {
+    animation: blob-move-2 25s ease-in-out infinite;
+}
+
+.bg-blob--3 {
+    animation: blob-move-3 18s ease-in-out infinite;
+}
+
+.hero-study-decor { animation: decor-float 8s ease-in-out infinite; }
+.study-note--yellow { animation: study-drift 5s ease-in-out infinite; }
+.study-note--mint { animation: study-drift-reverse 6s ease-in-out infinite; }
+.study-orbit--one { animation: pulse-dot 2.4s ease-in-out infinite; }
+.study-orbit--two { animation: study-drift-reverse 4s ease-in-out infinite; }
+.profile-frame { animation: profile-pulse 4.5s ease-in-out infinite; }
+.profile-corner { animation: pulse-dot 3s ease-in-out infinite; }
+.section-header::after { background-size: 200% 100%; animation: accent-sweep 4s ease-in-out infinite; }
+.nav-logo::before { animation: logo-signal 2.8s ease-in-out infinite; }
+
+/* Hero name animation */
+.hero-name.animate {
+    animation: name-reveal 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+/* Boot line */
+.boot-line.visible {
+    animation: boot-line-appear 0.3s ease forwards;
+}
+
+/* Staggered card reveal */
+.stagger-item {
+    opacity: 0;
+}
+
+.stagger-item.visible {
+    animation: stagger-card 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+/* Timeline item reveal */
+.timeline-item {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Terminal output line */
+.terminal-output-line {
+    animation: terminal-text-appear 0.2s ease forwards;
+}
+
+/* Profile particles */
+.profile-particle {
+    animation: float-particle 4s ease-in-out infinite;
+}
+
+/* Grid drift (subtle) */
+.bg-grid {
+    animation: grid-drift 30s linear infinite;
+}
+
+/* Skill icon rotate on hover */
+.skill-card:hover .skill-icon {
+    animation: spin 0.6s ease;
+}
+
+/* Loading spinner */
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--surface-active);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+/* Shimmer text effect */
+.shimmer-text {
+    background: linear-gradient(
+        90deg,
+        var(--text-secondary) 0%,
+        var(--text-primary) 50%,
+        var(--text-secondary) 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 3s linear infinite;
+}
+
+/* Page entrance */
+.main-content-enter > .section:first-child {
+    animation: fade-in 0.8s ease;
+}
+
+/* Scroll reveal stagger delays */
+.reveal[data-reveal-delay="100"] { transition-delay: 0.1s; }
+.reveal[data-reveal-delay="200"] { transition-delay: 0.2s; }
+.reveal[data-reveal-delay="300"] { transition-delay: 0.3s; }
+.reveal[data-reveal-delay="350"] { transition-delay: 0.35s; }
+.reveal[data-reveal-delay="400"] { transition-delay: 0.4s; }
+.reveal[data-reveal-delay="500"] { transition-delay: 0.5s; }
+.reveal[data-reveal-delay="600"] { transition-delay: 0.6s; }
+.reveal[data-reveal-delay="700"] { transition-delay: 0.7s; }
+.reveal[data-reveal-delay="800"] { transition-delay: 0.8s; }
+.reveal[data-reveal-delay="900"] { transition-delay: 0.9s; }
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-study-decor,
+    .study-note--yellow,
+    .study-note--mint,
+    .study-orbit--one,
+    .study-orbit--two,
+    .profile-frame,
+    .profile-corner,
+    .section-header::after,
+    .nav-logo::before {
+        animation: none;
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "sectionTitle": "STUDY HABITS",
+  "sectionSubtitle": "The small practices that shape how I learn, build, and improve.",
+  "traits": [
+    { "icon": "🔍", "title": "Curious Notes", "description": "I follow questions, inspect details, and turn new discoveries into something I can use." },
+    { "icon": "🧩", "title": "Break It Down", "description": "I make complex problems less intimidating by working through one practical piece at a time." },
+    { "icon": "📚", "title": "Daily Learning", "description": "I make room for steady practice because small study sessions compound into real progress." },
+    { "icon": "✦", "title": "Creative Builds", "description": "I enjoy giving useful interfaces personality, clarity, and a little spark." },
+    { "icon": "🧪", "title": "Quality Checks", "description": "I test, review, and refine so an idea becomes an experience people can trust." },
+    { "icon": "⚡", "title": "Good Energy", "description": "I bring focus and optimism to every experiment, assignment, and build log entry." }
+  ]
+}

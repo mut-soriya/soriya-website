@@ -1,0 +1,38 @@
+{
+  "name": "Soriya Mut",
+  "shortName": "Soriya",
+  "initials": "SM",
+  "role": "Web Developer",
+  "heroSubtitle": "IT STUDENT • ACTIVE LEARNER",
+  "education": "Passerelles Numériques Cambodia",
+  "educationShort": "PN Cambodia",
+  "focus": "Web Development",
+  "specialty": "Problem Solving",
+  "status": "Learning",
+  "mission": "BUILD • LEARN • GROW",
+  "interests": ["Web Development", "Programming", "Software Quality", "Technology"],
+  "description": "I'm an IT student who learns by building thoughtful web experiences, testing ideas, and staying curious about technology.",
+  "aboutTitle": "LEARNING OUT LOUD",
+  "aboutIntro": "A student workspace powered by curiosity, practical notes, and small builds that add up.",
+  "aboutText": "My name is Soriya Mut. I am an IT student at Passerelles Numériques Cambodia. I learn best by turning a new idea into a small experiment, a useful interface, or a clearer question. My focus is web development, programming, software quality, and building a steady practice around technology.",
+  "profileImage": "",
+  "profileAlt": "Soriya Mut — Web Developer and active learner",
+  "heroTags": ["HTML", "CSS", "JS", "PYTHON"],
+  "aboutCards": [
+    { "label": "NOTE", "value": "Learn by doing" },
+    { "label": "BUILD", "value": "Turn ideas into UI" },
+    { "label": "REVIEW", "value": "Improve the details" }
+  ],
+  "developerCard": {
+    "title": "STUDENT_NOTEBOOK.md",
+    "fields": [
+      { "label": "NAME", "value": "SORIYA MUT" },
+      { "label": "ROLE", "value": "IT STUDENT" },
+      { "label": "TRACK", "value": "WEB DEVELOPMENT" },
+      { "label": "STRENGTH", "value": "PROBLEM SOLVING" },
+      { "label": "NOW", "value": "ACTIVE LEARNING" },
+      { "label": "GOAL", "value": "BUILD • LEARN • GROW" }
+    ]
+  },
+  "footerText": "DESIGNED AS AN ACTIVE STUDY SPACE"
+}

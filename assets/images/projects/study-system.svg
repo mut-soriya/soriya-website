@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#11131e"/><stop offset="1" stop-color="#28204a"/></linearGradient></defs>
+<rect width="1200" height="675" fill="url(#g)"/><circle cx="1000" cy="100" r="180" fill="#7c6cff" opacity=".14"/><circle cx="150" cy="600" r="230" fill="#67e8f9" opacity=".08"/>
+<rect x="120" y="105" width="960" height="470" rx="28" fill="#0b0d15" stroke="#ffffff" stroke-opacity=".12"/>
+<rect x="160" y="145" width="190" height="390" rx="18" fill="#151824"/><rect x="390" y="145" width="650" height="90" rx="16" fill="#171b29"/>
+<rect x="420" y="275" width="190" height="115" rx="16" fill="#171b29"/><rect x="630" y="275" width="190" height="115" rx="16" fill="#171b29"/><rect x="840" y="275" width="170" height="115" rx="16" fill="#171b29"/>
+<rect x="390" y="420" width="620" height="95" rx="16" fill="#171b29"/><circle cx="240" cy="210" r="35" fill="#7c6cff"/><rect x="205" y="280" width="100" height="10" rx="5" fill="#555a6d"/><rect x="205" y="310" width="125" height="10" rx="5" fill="#343849"/>
+<text x="420" y="200" fill="#fff" font-size="28" font-family="Arial" font-weight="700">Student Study Management</text>
+<text x="420" y="325" fill="#a6adbd" font-size="18" font-family="Arial">Tasks</text><text x="630" y="325" fill="#a6adbd" font-size="18" font-family="Arial">Subjects</text><text x="840" y="325" fill="#a6adbd" font-size="18" font-family="Arial">Progress</text>
+</svg>

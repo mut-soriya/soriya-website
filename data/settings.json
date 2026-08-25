@@ -1,0 +1,53 @@
+{
+  "siteName": "Soriya Mut",
+  "siteTagline": "Web Developer & Active Learner",
+  "defaultLanguage": "en",
+  "defaultTheme": "dark",
+  "bootSequence": [
+    "OPENING STUDY SPACE...",
+    "LAYING OUT NOTES...",
+    "LOADING LEARNING MODULES...",
+    "PREPARING BUILD LOG...",
+    "STARTING FOCUS SESSION...",
+    "STUDY MODE ACTIVE"
+  ],
+  "hudData": {
+    "title": "STUDY PULSE",
+    "items": [
+      { "label": "MODE", "value": "FOCUS" },
+      { "label": "SUBJECT", "value": "WEB DEV" },
+      { "label": "SESSION", "value": "ACTIVE" },
+      { "label": "ENERGY", "value": "BUILDING" }
+    ]
+  },
+  "systemHudData": {
+    "title": "LEARNING SESSION ACTIVE",
+    "items": [
+      { "label": "CURRENT SUBJECT", "value": "WEB DEVELOPMENT" },
+      { "label": "STUDY MODE", "value": "PRACTICE + BUILD" },
+      { "label": "BUILD LOG", "value": "UPDATING" },
+      { "label": "MINDSET", "value": "CURIOUS + CONSISTENT" }
+    ]
+  },
+  "terminalCommands": {
+    "whoami": ["IT Student", "Web Developer", "Active Learner", "Problem Solver"],
+    "today": ["Focus: Web Development", "Session: Building and practicing", "Energy: Curious and consistent"],
+    "subjects": ["HTML & CSS", "JavaScript", "Python", "Git", "QA Testing"],
+    "builds": ["Student Study Management System", "Portfolio Study Space", "Library Management System"],
+    "goals": ["Build meaningful interfaces", "Practice quality-minded development", "Keep learning every day"],
+    "about": ["Soriya Mut — IT Student at Passerelles Numériques Cambodia.", "Focus: Web Development, Programming, Software Quality.", "Mission: BUILD • LEARN • GROW"],
+    "skills": ["HTML", "CSS", "JavaScript", "Python", "Git", "QA Testing"],
+    "projects": ["Student Study Management System", "Portfolio Study Space", "Library Management System"],
+    "contact": ["Email: soriya.mut@example.com", "Let's learn and build something meaningful!"],
+    "status": ["Studying...", "Building...", "Experimenting..."],
+    "help": ["Try: today, subjects, builds, goals, about, skills, projects, contact, status, whoami, clear"]
+  },
+  "navItems": [
+    { "id": "home", "label": "HOME", "labelKm": "ទំព័រដើម" },
+    { "id": "about", "label": "ABOUT", "labelKm": "អំពី" },
+    { "id": "skills", "label": "SUBJECTS", "labelKm": "មុខវិជ្ជា" },
+    { "id": "projects", "label": "BUILDS", "labelKm": "ការសាងសង់" },
+    { "id": "journey", "label": "JOURNEY", "labelKm": "ផ្លូវ" },
+    { "id": "contact", "label": "CONTACT", "labelKm": "ទំនាក់ទំនង" }
+  ]
+}

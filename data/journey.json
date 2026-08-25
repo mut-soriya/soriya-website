@@ -1,0 +1,13 @@
+{
+    "sectionTitle": "LEARNING ROADMAP",
+    "sectionSubtitle": "A growing collection of study sessions, practical work, and small wins.",
+    "timeline": [
+        {
+            "year": "2026 — PRESENT",
+            "title": "Passerelles Numériques Cambodia",
+            "subtitle": "IT / WEB DEVELOPMENT",
+            "description": "Developing technical and professional skills through practical learning in programming, web development, databases, software development, and quality assurance.",
+            "current": true
+        }
+    ]
+}

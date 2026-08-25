@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://soriya-mut.github.io/portfolio/sitemap.xml

@@ -1,0 +1,15 @@
+{
+  "sectionTitle": "LEARNING SUBJECTS",
+  "sectionSubtitle": "Topics, tools, and habits I am exploring through practical study sessions.",
+  "skills": [
+    { "name": "HTML", "category": "Foundation", "icon": "H", "status": "Active", "description": "Semantic structure, accessible layouts, and strong web foundations." },
+    { "name": "CSS", "category": "Foundation", "icon": "C", "status": "Active", "description": "Responsive layouts, design systems, and expressive interface details." },
+    { "name": "JavaScript", "category": "Practice Lab", "icon": "JS", "status": "Learning", "description": "Interactive UI logic, DOM work, and modern browser features." },
+    { "name": "Python", "category": "Practice Lab", "icon": "Py", "status": "Learning", "description": "Problem solving, scripting, and backend fundamentals." },
+    { "name": "Flask", "category": "Build Lab", "icon": "F", "status": "Learning", "description": "Small Python web applications and useful APIs." },
+    { "name": "Git", "category": "Study Habit", "icon": "G", "status": "Active", "description": "Version control, meaningful commits, and collaborative workflows." },
+    { "name": "SQL", "category": "Build Lab", "icon": "DB", "status": "Learning", "description": "Relational data, clear queries, and database design basics." },
+    { "name": "QA Testing", "category": "Quality Lab", "icon": "QA", "status": "Practicing", "description": "Testing thoughtfully so small builds become reliable experiences." },
+    { "name": "Responsive Design", "category": "Foundation", "icon": "R", "status": "Active", "description": "Making interfaces clear and useful on every screen size." }
+  ]
+}

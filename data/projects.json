@@ -1,0 +1,33 @@
+{
+  "sectionTitle": "BUILD LOG",
+  "sectionSubtitle": "Assignments, experiments, and practical builds from my learning desk.",
+  "projects": [
+    {
+      "title": "Student Study Management System",
+      "description": "A focused web application for organizing learning activities, tracking progress, and planning study schedules.",
+      "image": "",
+      "technologies": ["HTML", "CSS", "JavaScript", "Flask"],
+      "status": "Completed",
+      "github": "",
+      "demo": ""
+    },
+    {
+      "title": "Portfolio Study Space",
+      "description": "A playful personal study portfolio built with vanilla HTML, CSS, JavaScript, and JSON-driven content.",
+      "image": "",
+      "technologies": ["HTML", "CSS", "JavaScript", "JSON"],
+      "status": "Completed",
+      "github": "",
+      "demo": ""
+    },
+    {
+      "title": "Library Management System",
+      "description": "A database learning project for organizing books, members, and borrowing workflows with clear user flows.",
+      "image": "",
+      "technologies": ["Python", "Flask", "SQL"],
+      "status": "In Progress",
+      "github": "",
+      "demo": ""
+    }
+  ]
+}
