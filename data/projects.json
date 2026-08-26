@@ -3,6 +3,20 @@
   "sectionSubtitle": "Practical software development projects by Soriya Mut, from study tools to database applications.",
   "projects": [
     {
+      "title": "IT Awareness Club — Website & Admin Management System",
+      "description": "A completed real-world club website and admin management system developed for the IT Awareness Club. It brings the public website and protected administrator control center together in one centralized platform using Supabase Authentication and database-backed content management.",
+      "image": "assets/images/projects/it-awareness-club.png",
+      "technologies": ["HTML", "CSS", "JavaScript", "Supabase", "PostgreSQL"],
+      "status": "In Progress",
+      "purpose": "Provide the IT Awareness Club with a centralized platform for presenting club information and managing website content.",
+      "contribution": "Designed and developed the website interface and admin management experience, connected the application to Supabase services, and implemented practical content-management workflows.",
+      "features": ["Public IT Awareness Club website", "Protected administrator login", "Admin control center", "Content management", "Supabase Authentication", "Database-backed website content", "Responsive web interface", "Club information and activities management"],
+      "learning": "Gained practical experience building a real-world web application with authentication, database-backed content, protected administration features, and separate public and administrative experiences.",
+      "github": "",
+      "demo": "https://www.it-awareness.online/",
+      "admin": "https://www.it-awareness.online/admin/index.html"
+    },
+    {
       "title": "Student Study Management System",
       "description": "A completed web application that solves the problem of scattered study planning by organizing learning activities, progress tracking, and schedules in one place. My role was to build the learning project and its user interface with HTML, CSS, JavaScript, and Flask. Key features include activity organization, progress tracking, and study planning.",
       "image": "https://static.wixstatic.com/media/049da3_f8527a87fd184602ac57bf94888e2fef~mv2.png",

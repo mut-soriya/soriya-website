@@ -101,26 +101,44 @@ const Interactions = {
     /* ===== NAVIGATION: ACTIVE SECTION + INDICATOR ===== */
     initNavigation() {
         const navLinks = document.querySelectorAll('.nav-link');
-        const sections = document.querySelectorAll('section[data-section]');
-        const indicator = document.getElementById('nav-indicator');
+        if (!navLinks.length) return;
 
-        // Active section tracking
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const id = entry.target.dataset.section;
-                    navLinks.forEach(link => {
-                        link.classList.toggle('active', link.dataset.section === id);
-                    });
-                    this.moveNavIndicator(id);
+        const trackedSections = [...navLinks]
+            .map(link => document.getElementById(link.dataset.section))
+            .filter(Boolean);
+        let frameRequested = false;
+
+        const updateActiveSection = () => {
+            frameRequested = false;
+            const navHeight = document.querySelector('.nav')?.offsetHeight || 0;
+            const trackingLine = navHeight + Math.min(window.innerHeight * 0.28, 220);
+            let activeSection = trackedSections[0];
+
+            trackedSections.forEach(section => {
+                if (section.getBoundingClientRect().top <= trackingLine) {
+                    activeSection = section;
                 }
             });
-        }, {
-            threshold: 0.3,
-            rootMargin: '-20% 0px -40% 0px'
-        });
 
-        sections.forEach(s => observer.observe(s));
+            const activeId = activeSection.dataset.section;
+            navLinks.forEach(link => {
+                const isActive = link.dataset.section === activeId;
+                link.classList.toggle('active', isActive);
+                if (isActive) link.setAttribute('aria-current', 'page');
+                else link.removeAttribute('aria-current');
+            });
+            this.moveNavIndicator(activeId);
+        };
+
+        const requestActiveSectionUpdate = () => {
+            if (frameRequested) return;
+            frameRequested = true;
+            requestAnimationFrame(updateActiveSection);
+        };
+
+        window.addEventListener('scroll', requestActiveSectionUpdate, { passive: true });
+        window.addEventListener('resize', requestActiveSectionUpdate);
+        requestActiveSectionUpdate();
     },
 
     moveNavIndicator(sectionId) {

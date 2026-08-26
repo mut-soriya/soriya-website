@@ -226,7 +226,7 @@ const DataLoader = {
             ).join('');
 
             const demoBtn = project.demo
-                ? `<a href="${project.demo}" target="_blank" rel="noopener" class="project-link project-link--demo">
+                ? `<a href="${project.demo}" target="_blank" rel="noopener noreferrer" class="project-link project-link--demo">
                     <span data-i18n="projects.liveDemo">LIVE DEMO</span> ↗
                   </a>`
                 : '';
@@ -236,6 +236,12 @@ const DataLoader = {
                     <span data-i18n="projects.github">GITHUB</span> ↗
                   </a>`
                 : '';
+
+                        const adminBtn = project.admin
+                                ? `<a href="${project.admin}" target="_blank" rel="noopener noreferrer" class="project-link project-link--github">
+                                        Admin Demo ↗
+                                    </a>`
+                                : '';
 
             return `
                 <article class="project-card stagger-item" data-stagger="${i}">
@@ -252,6 +258,7 @@ const DataLoader = {
                         ${project.learning ? `<p class="project-detail"><strong>What I learned:</strong> ${project.learning}</p>` : ''}
                         <div class="project-links">
                             ${demoBtn}
+                            ${adminBtn}
                             ${githubBtn}
                         </div>
                     </div>
