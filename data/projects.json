@@ -1,10 +1,10 @@
 {
   "sectionTitle": "BUILD LOG",
-  "sectionSubtitle": "Assignments, experiments, and practical builds from my learning desk.",
+  "sectionSubtitle": "Practical software development projects by Soriya Mut, from study tools to database applications.",
   "projects": [
     {
       "title": "Student Study Management System",
-      "description": "A focused web application for organizing learning activities, tracking progress, and planning study schedules.",
+      "description": "A completed web application that solves the problem of scattered study planning by organizing learning activities, progress tracking, and schedules in one place. My role was to build the learning project and its user interface with HTML, CSS, JavaScript, and Flask. Key features include activity organization, progress tracking, and study planning.",
       "image": "https://static.wixstatic.com/media/049da3_f8527a87fd184602ac57bf94888e2fef~mv2.png",
       "technologies": ["HTML", "CSS", "JavaScript", "Flask"],
       "status": "Completed",
@@ -13,7 +13,7 @@
     },
     {
       "title": "Portfolio Study Space",
-      "description": "A playful personal study portfolio built with vanilla HTML, CSS, JavaScript, and JSON-driven content.",
+      "description": "A completed personal portfolio that presents Soriya Mut's IT studies, skills, journey, and projects in one accessible place. My role was to design and build the portfolio with vanilla HTML, CSS, JavaScript, and JSON-driven content. Features include responsive sections, bilingual content, theme switching, and interactive study-focused elements.",
       "image": "https://i.ibb.co/KcDfVy0j/generated-20260825-T090514-Z-1.png",
       "technologies": ["HTML", "CSS", "JavaScript", "JSON"],
       "status": "Completed",
@@ -22,7 +22,7 @@
     },
     {
       "title": "Library Management System",
-      "description": "A database learning project for organizing books, members, and borrowing workflows with clear user flows.",
+      "description": "An in-progress database learning project that addresses the challenge of organizing books, members, and borrowing workflows. My role is to develop and practice the application with Python, Flask, and SQL. The project focuses on clear user flows, relational data, and library management fundamentals.",
       "image": "https://www.pixel-studios.com/blog/wp-content/uploads/2018/12/012-1200x600.jpg",
       "technologies": ["Python", "Flask", "SQL"],
       "status": "In Progress",

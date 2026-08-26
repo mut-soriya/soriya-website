@@ -4,8 +4,8 @@
     "timeline": [
         {
             "year": "2025",
-            "title": "Bacll — National Examination",
-            "subtitle": "Got best results for the exam",
+            "title": "Baccalaureate — National Examination",
+            "subtitle": "Completed the Cambodian national examination",
             "description": "Successfully achieved Grade A in the Cambodian National Examination.",
             "current": true
         },
@@ -13,7 +13,7 @@
             "year": "2026 — PRESENT",
             "title": "Passerelles Numériques Cambodia",
             "subtitle": "IT / WEB DEVELOPMENT",
-            "description": "Developing technical and professional skills through practical learning in programming, web development, databases, software development, and quality assurance.",
+            "description": "At Passerelles Numériques Cambodia, Soriya Mut is developing technical and professional skills through practical learning in programming, web development, databases, software development, and quality assurance.",
             "current": true
         }
     ]
