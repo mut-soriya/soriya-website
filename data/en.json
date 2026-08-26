@@ -7,7 +7,7 @@
     "skills": { "number": "02 / SKILLS", "title": "SKILLS AND TECHNOLOGIES", "subtitle": "Technologies and software development practices I am learning through practical work." },
     "projects": { "number": "03 / PROJECTS", "title": "PROJECTS", "subtitle": "Practical software development projects by Soriya Mut, from study tools to database applications.", "liveDemo": "OPEN BUILD", "github": "VIEW NOTES", "viewCode": "VIEW CODE", "viewProject": "OPEN BUILD" },
     "hud": { "number": "04 / STUDY PULSE", "title": "LEARNING SESSION", "status": "LEARNING SESSION ACTIVE" },
-    "journey": { "number": "05 / EDUCATION", "title": "MY JOURNEY", "subtitle": "Soriya Mut's education and learning path in Cambodia.", "current": "CURRENTLY LEARNING" },
+    "journey": { "number": "05 / EDUCATION", "title": "EDUCATION AND LEARNING JOURNEY", "subtitle": "Soriya Mut's Information Technology education and learning path in Cambodia.", "current": "CURRENTLY LEARNING" },
     "achievements": { "number": "06 / MILESTONES", "title": "NEXT MILESTONES", "subtitle": "Small wins and bigger goals still taking shape.", "empty": "MORE MILESTONES LOADING..." },
     "terminal": { "number": "07 / STUDY CONSOLE", "title": "STUDY CONSOLE", "subtitle": "A tiny interactive notebook — no real system commands are executed.", "prompt": "soriya@study:~$", "welcome": "Study space ready. Type 'help' for a few useful notes.", "placeholder": "Try: today, subjects, builds..." },
     "traits": { "number": "08 / HABITS", "title": "STUDY HABITS", "subtitle": "The small practices that shape how I learn, build, and improve." },

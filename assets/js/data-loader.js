@@ -82,7 +82,7 @@ const DataLoader = {
 
         // Hero
         const heroName = document.getElementById('hero-name');
-        if (heroName) heroName.textContent = p.name;
+        if (heroName) heroName.textContent = `${p.name} — IT STUDENT & WEB DEVELOPER`;
 
         const heroDesc = document.getElementById('hero-desc');
         if (heroDesc) heroDesc.textContent = p.description;
@@ -274,7 +274,7 @@ const DataLoader = {
         const tempImg = new Image();
         tempImg.onload = () => {
             wrapper.innerHTML = `
-                <img class="project-image" src="${url}" alt="${altText || 'Project'}" loading="lazy">
+                <img class="project-image" src="${url}" alt="${altText || 'Project'} project screenshot by Soriya Mut" loading="lazy">
                 <div class="project-image-overlay"></div>
             `;
         };
