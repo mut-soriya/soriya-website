@@ -201,7 +201,9 @@ const DataLoader = {
         const grid = document.getElementById('projects-grid');
         if (!grid) return;
 
-        grid.innerHTML = p.projects.map((project, i) => {
+        const publicProjects = p.projects.filter(project => project.public !== false);
+
+        grid.innerHTML = publicProjects.map((project, i) => {
             const imageHtml = project.image
                 ? `<div class="project-image-wrapper" data-project-image="${i}">
                     <div class="project-image-placeholder">
@@ -267,7 +269,7 @@ const DataLoader = {
         }).join('');
 
         // Load project images asynchronously
-        p.projects.forEach((project, i) => {
+        publicProjects.forEach((project, i) => {
             if (project.image) {
                 this.loadProjectImage(i, project.image, project.title);
             }
