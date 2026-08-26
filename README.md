@@ -51,7 +51,7 @@ portfolio/
 │       ├── projects/
 │       ├── background/
 │       └── icons/
-├── favicon.ico
+│           └── logo-portfolio.png
 ├── robots.txt
 ├── sitemap.xml
 └── README.md
