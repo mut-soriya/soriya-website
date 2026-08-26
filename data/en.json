@@ -3,7 +3,7 @@
   "translations": {
     "nav": { "home": "HOME", "about": "ABOUT", "skills": "SUBJECTS", "projects": "BUILDS", "journey": "JOURNEY", "contact": "CONTACT" },
     "hero": { "signal": "STUDY SESSION ACTIVE", "greeting": "HELLO, I'M", "role": "IT STUDENT • WEB DEVELOPER • DIGITAL CREATOR", "explore": "EXPLORE BUILDS", "connect": "SEND A NOTE", "scroll": "SCROLL TO STUDY", "online": "STUDYING" },
-    "about": { "number": "01 / ABOUT SORIYA MUT", "title": "ABOUT ME", "intro": "Soriya Mut is an IT student in Cambodia building a foundation in web development and software development.", "cardTitle": "STUDENT_NOTEBOOK.md", "devUnit": "ABOUT SORIYA MUT / 01", "progressNote": "A PERSONAL LEARNING SNAPSHOT — NOT A FORMAL QUALIFICATION" },
+    "about": { "number": "01 / ABOUT SORIYA MUT", "title": "ABOUT SORIYA MUT", "intro": "Soriya Mut is a male Information Technology student, web developer, and digital creator from Phnom Penh, Cambodia.", "cardTitle": "STUDENT_NOTEBOOK.md", "devUnit": "ABOUT SORIYA MUT / 01", "progressNote": "A PERSONAL LEARNING SNAPSHOT — NOT A FORMAL QUALIFICATION" },
     "skills": { "number": "02 / SKILLS", "title": "SKILLS AND TECHNOLOGIES", "subtitle": "Technologies and software development practices I am learning through practical work." },
     "projects": { "number": "03 / PROJECTS", "title": "PROJECTS", "subtitle": "Practical software development projects by Soriya Mut, from study tools to database applications.", "liveDemo": "OPEN BUILD", "github": "VIEW NOTES", "viewCode": "VIEW CODE", "viewProject": "OPEN BUILD" },
     "hud": { "number": "04 / STUDY PULSE", "title": "LEARNING SESSION", "status": "LEARNING SESSION ACTIVE" },
