@@ -8,6 +8,10 @@
       "image": "https://static.wixstatic.com/media/049da3_f8527a87fd184602ac57bf94888e2fef~mv2.png",
       "technologies": ["HTML", "CSS", "JavaScript", "Flask"],
       "status": "Completed",
+      "purpose": "Organize learning activities, progress, and study schedules in one focused application.",
+      "contribution": "Built the learning project and its user interface as part of practical web development study.",
+      "features": ["Learning activity organization", "Progress tracking", "Study schedule planning"],
+      "learning": "Practiced connecting a responsive frontend to a Python web application.",
       "github": "",
       "demo": ""
     },
@@ -17,6 +21,10 @@
       "image": "https://i.ibb.co/KcDfVy0j/generated-20260825-T090514-Z-1.png",
       "technologies": ["HTML", "CSS", "JavaScript", "JSON"],
       "status": "Completed",
+      "purpose": "Create a clear public home for Soriya Mut's studies, skills, journey, and projects.",
+      "contribution": "Designed and built the portfolio interface, content system, and interactive study-focused elements.",
+      "features": ["Responsive sections", "English and Khmer content", "Theme switching", "JSON-driven content"],
+      "learning": "Practiced organizing content for people and search engines while keeping the experience personal.",
       "github": "",
       "demo": ""
     },
@@ -26,6 +34,10 @@
       "image": "https://www.pixel-studios.com/blog/wp-content/uploads/2018/12/012-1200x600.jpg",
       "technologies": ["Python", "Flask", "SQL"],
       "status": "In Progress",
+      "purpose": "Explore how a database application can organize books, members, and borrowing workflows.",
+      "contribution": "Developing the learning project and practicing its application flow with Python, Flask, and SQL.",
+      "features": ["Book organization", "Member records", "Borrowing workflow planning"],
+      "learning": "Building understanding of relational data, database design, and backend fundamentals.",
       "github": "",
       "demo": ""
     }

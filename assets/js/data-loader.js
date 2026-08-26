@@ -245,7 +245,11 @@ const DataLoader = {
                     <div class="project-info">
                         <h3 class="project-title">${project.title}</h3>
                         <p class="project-description">${project.description}</p>
+                        ${project.purpose ? `<p class="project-detail"><strong>Purpose:</strong> ${project.purpose}</p>` : ''}
+                        ${project.contribution ? `<p class="project-detail"><strong>My contribution:</strong> ${project.contribution}</p>` : ''}
                         <div class="project-tech">${techTags}</div>
+                        ${project.features?.length ? `<div class="project-detail"><strong>Key features:</strong> ${project.features.join(' • ')}</div>` : ''}
+                        ${project.learning ? `<p class="project-detail"><strong>What I learned:</strong> ${project.learning}</p>` : ''}
                         <div class="project-links">
                             ${demoBtn}
                             ${githubBtn}
