@@ -18,7 +18,7 @@
   "aboutTitle": "LEARNING OUT LOUD",
   "aboutIntro": "Soriya Mut is a male Information Technology student, web developer, and digital creator from Phnom Penh, Cambodia.",
   "aboutText": "I study Information Technology at Passerelles Numériques Cambodia, where I develop practical skills in programming, web development, databases, and quality assurance. I enjoy turning ideas into useful interfaces and small applications, then reviewing the details to make each build clearer and more reliable. I am currently working toward becoming a stronger web developer through consistent practice and meaningful projects.",
-  "profileImage": "https://i.ibb.co/bjWvFddG/profile-image.jpg",
+  "profileImage": "./assets/images/profile.jpg",
   "profileAlt": "Soriya Mut, male IT student and web developer in Phnom Penh, Cambodia",
   "heroTags": ["HTML", "CSS", "JS", "PYTHON"],
   "aboutCards": [

@@ -82,7 +82,7 @@ const App = {
 
     async loadBootSettings() {
         try {
-            const res = await fetch('data/settings.json');
+            const res = await fetch(resolvePortfolioPath('data/settings.json'));
             if (!res.ok) return null;
             return await res.json();
         } catch {
@@ -117,7 +117,7 @@ const App = {
             // Set initial nav indicator after a delay (for layout to settle)
             setTimeout(() => {
                 const activeLink = document.querySelector('.nav-link.active');
-                if (activeLink) {
+                if (activeLink && typeof Interactions.moveNavIndicator === 'function') {
                     Interactions.moveNavIndicator(activeLink.dataset.section);
                 }
             }, 500);

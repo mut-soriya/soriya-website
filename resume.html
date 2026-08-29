@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Soriya Mut</title>
+    <meta name="description" content="Professional resume of Soriya Mut, IT student and web developer from Cambodia.">
+    <link rel="icon" type="image/png" sizes="256x256" href="./assets/images/icons/logo-portfolio-favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/animations.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/study-vibe.css">
+    <script>window.PORTFOLIO_BASE = './';</script>
+    <style>
+        .resume-page { padding-top: 120px; padding-bottom: 80px; }
+        .resume-shell { max-width: 1200px; margin: 0 auto; background: rgba(10, 12, 18, 0.58); border: 1px solid var(--border); border-radius: 24px; box-shadow: 0 18px 48px rgba(15, 23, 42, 0.2); overflow: hidden; }
+        [data-theme="light"] .resume-shell { background: rgba(255, 255, 255, 0.82); box-shadow: 0 18px 48px rgba(15, 23, 42, 0.08); }
+        .resume-header { padding: 32px 32px 20px; border-bottom: 1px solid var(--border); background: linear-gradient(180deg, rgba(124, 58, 237, 0.06), rgba(6, 182, 212, 0.02)); }
+        .resume-tag { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.18em; color: var(--accent-light); text-transform: uppercase; margin-bottom: 14px; }
+        .resume-headline { font-size: clamp(2rem, 3vw, 3rem); font-weight: 700; letter-spacing: -0.06em; margin-bottom: 8px; }
+        .resume-role { color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 12px; }
+        .resume-intro { max-width: 760px; color: var(--text-secondary); margin-bottom: 18px; }
+        .resume-contact-grid { display: flex; flex-wrap: wrap; gap: 10px 16px; font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-secondary); }
+        .resume-contact-item { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px; border: 1px solid var(--border); background: rgba(255,255,255,0.02); }
+        .resume-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+        .resume-actions .btn { min-width: 180px; justify-content: center; }
+        .btn-ghost { background: transparent; border: 1px solid var(--border); color: var(--text-primary); box-shadow: none; }
+        .btn-ghost:hover { background: rgba(255,255,255,0.03); border-color: var(--border-strong); transform: translateY(-1px); }
+        .resume-document { padding: 32px; }
+        .resume-layout { display: grid; grid-template-columns: minmax(0, 1.9fr) minmax(260px, 0.9fr); gap: 28px; align-items: start; }
+        .resume-main, .resume-sidebar { display: flex; flex-direction: column; gap: 24px; }
+        .resume-section { border: 1px solid var(--border); border-radius: 18px; background: rgba(255,255,255,0.02); padding: 20px 20px 18px; }
+        [data-theme="light"] .resume-section { background: rgba(15, 23, 42, 0.015); }
+        .resume-section-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+        .resume-section-title { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent-light); }
+        .resume-section-body { display: grid; gap: 14px; }
+        .resume-summary, .resume-education-item, .resume-project-item, .resume-experience-item, .resume-achievement-item, .resume-mini-item { display: grid; gap: 6px; }
+        .resume-education-item, .resume-project-item, .resume-experience-item { padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .resume-education-item:last-child, .resume-project-item:last-child, .resume-experience-item:last-child { border-bottom: none; padding-bottom: 0; }
+        .resume-item-top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+        .resume-item-title { font-size: 1.02rem; font-weight: 600; }
+        .resume-item-meta, .resume-item-date { font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-secondary); }
+        .resume-item-subtitle { color: var(--text-secondary); font-size: 0.88rem; }
+        .resume-item-copy, .resume-bullets, .resume-project-tech, .resume-skills-list, .resume-list { color: var(--text-secondary); line-height: 1.7; }
+        .resume-item-copy { font-size: 0.93rem; }
+        .resume-bullets, .resume-list { padding-left: 18px; }
+        .resume-bullets li, .resume-list li { margin-bottom: 6px; }
+        .resume-project-tech, .resume-skills-list { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; }
+        .resume-tech-pill, .resume-skill-pill { display: inline-flex; align-items: center; border-radius: 999px; padding: 6px 10px; background: rgba(124, 58, 237, 0.08); border: 1px solid rgba(167, 139, 250, 0.18); font-family: var(--font-mono); font-size: 0.66rem; color: var(--text-primary); }
+        .resume-project-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+        .resume-project-link { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: 0.7rem; padding: 8px 10px; border: 1px solid var(--border); border-radius: 10px; color: var(--text-primary); background: rgba(255,255,255,0.02); }
+        .resume-project-link:hover { border-color: var(--accent); color: var(--accent-light); }
+        .resume-sidebar .resume-section { padding: 18px 18px 16px; }
+        .resume-skill-group { display: grid; gap: 12px; }
+        .resume-skill-group h4 { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.14em; color: var(--accent-light); text-transform: uppercase; margin-bottom: 8px; }
+        .resume-contact-list, .resume-mini-list { display: grid; gap: 10px; }
+        .resume-contact-list a, .resume-mini-list span { color: var(--text-secondary); font-size: 0.92rem; word-break: break-word; }
+        .resume-learning-card { display: flex; flex-wrap: wrap; gap: 8px; }
+        @media (max-width: 900px) { .resume-layout { grid-template-columns: 1fr; } }
+        @media (max-width: 600px) { .resume-page { padding-top: 96px; padding-bottom: 48px; } .resume-header, .resume-document { padding-left: 18px; padding-right: 18px; } .resume-actions { flex-direction: column; } .resume-actions .btn { width: 100%; } .resume-contact-grid { gap: 8px; } .resume-item-top { flex-direction: column; align-items: flex-start; } }
+        @media print { @page { size: A4; margin: 12mm; } body { background: #ffffff !important; color: #111111 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; } .bg-layer, .cursor-glow, .nav, .footer, .toast, .scroll-progress, .theme-toggle, .nav-hamburger, .resume-actions, .boot-loader { display: none !important; } .resume-page { padding: 0 !important; } .resume-shell { max-width: none !important; margin: 0 !important; background: #ffffff !important; border: none !important; box-shadow: none !important; border-radius: 0 !important; } .resume-header, .resume-section, .resume-project-link, .resume-tech-pill, .resume-skill-pill, .resume-contact-item { background: #ffffff !important; color: #111111 !important; border-color: rgba(17, 17, 17, 0.2) !important; box-shadow: none !important; } .resume-headline, .resume-role, .resume-section-title, .resume-item-title, .resume-section h3, .resume-section h4, .resume-item-subtitle, .resume-item-copy, .resume-item-meta, .resume-item-date, .resume-contact-list a, .resume-list, .resume-bullets, .resume-skills-list, .resume-project-tech, .resume-contact-item, .resume-tag, .resume-intro, .resume-skill-group h4, .resume-item-copy, .resume-section-body, .resume-project-link, .resume-tech-pill, .resume-skill-pill { color: #111111 !important; } .resume-section, .resume-header { border-color: rgba(17, 17, 17, 0.18) !important; } }
+    </style>
+</head>
+<body>
+    <div class="bg-layer" aria-hidden="true"><div class="bg-grid"></div><canvas class="bg-particles" id="bg-particles"></canvas><div class="bg-blob bg-blob--1"></div><div class="bg-blob bg-blob--2"></div><div class="bg-blob bg-blob--3"></div><div class="bg-noise"></div></div>
+    <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-inner">
+            <a href="./index.html" class="nav-logo" aria-label="Soriya Mut home"><span class="nav-logo-bracket">&lt;</span><span class="nav-logo-text">SORIYA<span class="nav-logo-slash">//</span>DEV</span><span class="nav-logo-bracket">&gt;</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="./index.html" class="nav-link" data-section="home">HOME</a></li>
+                <li><a href="./pages/profile.html" class="nav-link" data-section="profile">PROFILE</a></li>
+                <li><a href="./pages/skills.html" class="nav-link" data-section="skills">SKILLS</a></li>
+                <li><a href="./pages/projects.html" class="nav-link" data-section="projects">PROJECTS</a></li>
+                <li><a href="./pages/journey.html" class="nav-link" data-section="journey">JOURNEY</a></li>
+                <li><a href="./pages/goals.html" class="nav-link" data-section="goals">GOALS</a></li>
+                <li><a href="./pages/terminal.html" class="nav-link" data-section="terminal">TERMINAL</a></li>
+                <li><a href="./pages/traits.html" class="nav-link" data-section="traits">TRAITS</a></li>
+                <li><a href="./pages/contact.html" class="nav-link" data-section="contact">CONTACT</a></li>
+                <li><a href="./resume.html" class="nav-link active" aria-current="page" data-section="resume">RESUME</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="theme-icon-dark" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                    <svg class="theme-icon-light" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                </button>
+                <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+        <div class="nav-indicator" id="nav-indicator"></div>
+    </nav>
+
+    <main id="main-content" class="resume-page">
+        <div class="resume-shell">
+            <header class="resume-header">
+                <div class="resume-tag">Professional Resume</div>
+                <h1 class="resume-headline">SORIYA MUT</h1>
+                <div class="resume-role">IT Student • Web Developer • Digital Creator</div>
+                <p class="resume-intro">Information Technology student passionate about web development, programming, software development, databases, and quality assurance.</p>
+                <div class="resume-contact-grid">
+                    <span class="resume-contact-item">Location: Cambodia</span>
+                    <span class="resume-contact-item">Email: mut.soriya467@gmail.com</span>
+                    <span class="resume-contact-item">GitHub: github.com/mut-soriya</span>
+                    <span class="resume-contact-item">LinkedIn: linkedin.com/in/soriya-mut-b98184429</span>
+                    <span class="resume-contact-item">Telegram: t.me/Ya_battambang</span>
+                </div>
+                <div class="resume-actions">
+                    <a class="btn btn-primary" href="./resume/Resume.pdf" target="_blank" download>↓ DOWNLOAD RESUME</a>
+                    <button class="btn btn-ghost" type="button" id="print-resume-btn">PRINT RESUME</button>
+                </div>
+            </header>
+            <div class="resume-document">
+                <div class="resume-layout">
+                    <div class="resume-main">
+                        <section class="resume-section">
+                            <div class="resume-section-header"><h2 class="resume-section-title">Profile</h2></div>
+                            <div class="resume-section-body"><div class="resume-summary"><p class="resume-item-copy">Information Technology student with a growing interest in web development, programming, software development, databases, and quality assurance. I enjoy building practical digital solutions, improving my technical skills, and creating user-friendly experiences through clear, functional interfaces.</p></div></div>
+                        </section>
+                        <section class="resume-section">
+                            <div class="resume-section-header"><h2 class="resume-section-title">Education</h2></div>
+                            <div class="resume-section-body">
+                                <div class="resume-education-item">
+                                    <div class="resume-item-top"><div class="resume-item-title">Passerelles Numériques Cambodia (PNC)</div><div class="resume-item-date">2025 – Present</div></div>
+                                    <div class="resume-item-subtitle">Information Technology / Web Development</div>
+                                    <p class="resume-item-copy">Focused on learning practical programming, web development, software design, databases, and quality assurance with project-based study.</p>
+                                </div>
+                                <div class="resume-education-item">
+                                    <div class="resume-item-top"><div class="resume-item-title">Cambodian National Examination</div><div class="resume-item-date">2025</div></div>
+                                    <div class="resume-item-subtitle">Academic Achievement</div>
+                                    <p class="resume-item-copy">Completed the national exam with strong academic results while continuing to develop technical skills in digital and software projects.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="resume-section">
+                            <div class="resume-section-header"><h2 class="resume-section-title">Experience</h2></div>
+                            <div class="resume-section-body">
+                                <div class="resume-experience-item">
+                                    <div class="resume-item-top"><div class="resume-item-title">Academic / Project Experience</div><div class="resume-item-date">Ongoing</div></div>
+                                    <div class="resume-item-subtitle">Web Development & Programming Practice</div>
+                                    <ul class="resume-bullets">
+                                        <li>Built practical portfolio and project work using HTML, CSS, JavaScript, Python, and Flask.</li>
+                                        <li>Worked on responsive interface design and user-centered layouts for personal and study projects.</li>
+                                        <li>Practiced project planning, testing, debugging, and improving web application quality.</li>
+                                        <li>Collaborated on learning-focused projects that involve database concepts, software structure, and UI clarity.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="resume-section">
+                            <div class="resume-section-header"><h2 class="resume-section-title">Projects</h2></div>
+                            <div class="resume-section-body">
+                                <div class="resume-project-item">
+                                    <div class="resume-item-top"><div class="resume-item-title">Student Study Management System</div><div class="resume-item-date">Completed</div></div>
+                                    <div class="resume-item-subtitle">Role: Developer</div>
+                                    <p class="resume-item-copy">A study planning application designed to organize learning tasks, progress, and schedules in one place.</p>
+                                    <ul class="resume-project-tech"><li class="resume-tech-pill">HTML</li><li class="resume-tech-pill">CSS</li><li class="resume-tech-pill">JavaScript</li><li class="resume-tech-pill">Flask</li></ul>
+                                    <div class="resume-project-links"><a class="resume-project-link" href="https://github.com/mut-soriya" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+                                </div>
+                                <div class="resume-project-item">
+                                    <div class="resume-item-top"><div class="resume-item-title">Portfolio Study Space</div><div class="resume-item-date">Completed</div></div>
+                                    <div class="resume-item-subtitle">Role: Developer / Designer</div>
+                                    <p class="resume-item-copy">A personal portfolio and study space that presents skills, projects, journey, and learning progress with a polished interface.</p>
+                                    <ul class="resume-project-tech"><li class="resume-tech-pill">HTML</li><li class="resume-tech-pill">CSS</li><li class="resume-tech-pill">JavaScript</li><li class="resume-tech-pill">JSON</li></ul>
+                                    <div class="resume-project-links"><a class="resume-project-link" href="https://github.com/mut-soriya" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+                                </div>
+                                <div class="resume-project-item">
+                                    <div class="resume-item-top"><div class="resume-item-title">Library Management System</div><div class="resume-item-date">In Progress</div></div>
+                                    <div class="resume-item-subtitle">Role: Student Developer</div>
+                                    <p class="resume-item-copy">A database learning project focused on books, members, and borrowing workflows using relational data concepts.</p>
+                                    <ul class="resume-project-tech"><li class="resume-tech-pill">Python</li><li class="resume-tech-pill">Flask</li><li class="resume-tech-pill">SQL</li></ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <aside class="resume-sidebar">
+                        <section class="resume-section">
+                            <div class="resume-section-header"><h2 class="resume-section-title">Contact</h2></div>
+                            <div class="resume-contact-list">
+                                <span>Location: Cambodia</span>
+                                <a href="mailto:mut.soriya467@gmail.com">mut.soriya467@gmail.com</a>
+                                <a href="https://github.com/mut-soriya" target="_blank" rel="noopener noreferrer">github.com/mut-soriya</a>
+                                <a href="https://www.linkedin.com/in/soriya-mut-b98184429/" target="_blank" rel="noopener noreferrer">linkedin.com/in/soriya-mut-b98184429</a>
+                                <a href="https://t.me/Ya_battambang" target="_blank" rel="noopener noreferrer">t.me/Ya_battambang</a>
+                            </div>
+                        </section>
+                        <section class="resume-section">
+                            <div class="resume-section-header"><h2 class="resume-section-title">Technical Skills</h2></div>
+                            <div class="resume-skill-group">
+                                <div><h4>Frontend</h4><div class="resume-skills-list"><span class="resume-skill-pill">HTML</span><span class="resume-skill-pill">CSS</span><span class="resume-skill-pill">JavaScript</span><span class="resume-skill-pill">Responsive Design</span></div></div>
+                                <div><h4>Backend</h4><div class="resume-skills-list"><span class="resume-skill-pill">Python</span><span class="resume-skill-pill">Flask</span></div></div>
+                                <div><h4>Database</h4><div class="resume-skills-list"><span class="resume-skill-pill">SQL</span><span class="resume-skill-pill">MariaDB / MySQL</span><span class="resume-skill-pill">Database Design</span></div></div>
+                                <div><h4>Tools</h4><div class="resume-skills-list"><span class="resume-skill-pill">Git</span><span class="resume-skill-pill">GitHub</span><span class="resume-skill-pill">VS Code</span></div></div>
+                                <div><h4>Other</h4><div class="resume-skills-list"><span class="resume-skill-pill">Quality Assurance</span><span class="resume-skill-pill">UX/UI</span><span class="resume-skill-pill">Software Development</span></div></div>
+                            </div>
+                        </section>
+                        <section class="resume-section">
+                            <div class="resume-section-header"><h2 class="resume-section-title">Certifications & Achievements</h2></div>
+                            <ul class="resume-list">
+                                <li>Academic development through project-based learning at Passerelles Numériques Cambodia.</li>
+                                <li>Practiced building and improving web projects in HTML, CSS, JavaScript, Python, and databases.</li>
+                                <li>Focused on quality improvement, testing, and reusable design practices.</li>
+                            </ul>
+                        </section>
+                        <section class="resume-section">
+                            <div class="resume-section-header"><h2 class="resume-section-title">Learning Journey</h2></div>
+                            <div class="resume-learning-card"><span class="resume-skill-pill">JavaScript</span><span class="resume-skill-pill">Python / Flask</span><span class="resume-skill-pill">SQL</span><span class="resume-skill-pill">Responsive Web Design</span><span class="resume-skill-pill">QA Testing</span><span class="resume-skill-pill">Software Development</span></div>
+                        </section>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer"><div class="footer-inner"><div class="footer-brand"><span class="footer-logo">SORIYA MUT<span class="footer-logo-slash">//</span>IT STUDENT &amp; WEB DEVELOPER</span></div><div class="footer-mission">BUILD • LEARN • GROW</div><div class="footer-copy"><span>© <span id="footer-year"></span> SORIYA MUT</span><span class="footer-designed" data-i18n="footer.designed">DESIGNED AS AN ACTIVE STUDY SPACE</span></div></div></footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"><span class="toast-icon">✓</span><span class="toast-text" id="toast-text"></span></div>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+    <script src="./assets/js/data-loader.js"></script>
+    <script src="./assets/js/animations.js"></script>
+    <script src="./assets/js/interactions.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const year = document.getElementById('footer-year'); if (year) year.textContent = new Date().getFullYear();
+            document.querySelectorAll('.nav-link').forEach(link => {
+                if (link.href && link.href.endsWith('resume.html')) { link.classList.add('active'); link.setAttribute('aria-current', 'page'); }
+                else { link.classList.remove('active'); link.removeAttribute('aria-current'); }
+            });
+            document.getElementById('print-resume-btn')?.addEventListener('click', () => {
+                const pdfUrl = './resume/Resume.pdf';
+                const printWindow = window.open(pdfUrl, '_blank');
+                if (printWindow) {
+                    printWindow.focus();
+                    setTimeout(() => printWindow.print(), 600);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

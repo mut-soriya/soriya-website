@@ -2,8 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://soriya-portfolio.mut-soriya467.workers.dev/</loc>
-        <lastmod>2026-08-26</lastmod>
-        <changefreq>monthly</changefreq>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://soriya-portfolio.mut-soriya467.workers.dev/pages/profile.html</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://soriya-portfolio.mut-soriya467.workers.dev/pages/skills.html</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://soriya-portfolio.mut-soriya467.workers.dev/pages/projects.html</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://soriya-portfolio.mut-soriya467.workers.dev/pages/journey.html</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://soriya-portfolio.mut-soriya467.workers.dev/pages/goals.html</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://soriya-portfolio.mut-soriya467.workers.dev/pages/terminal.html</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://soriya-portfolio.mut-soriya467.workers.dev/pages/traits.html</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://soriya-portfolio.mut-soriya467.workers.dev/pages/contact.html</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
 </urlset>

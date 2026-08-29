@@ -18,7 +18,7 @@ const Interactions = {
         this.initNavigation();
         this.initThemeToggle();
         this.initTerminal();
-        this.initCopyEmail();
+        this.initContactForm();
         this.initFloatingHUD();
         this.initHamburger();
         this.initSmoothScroll();
@@ -98,14 +98,22 @@ const Interactions = {
         });
     },
 
+    moveNavIndicator() {
+        // The nav indicator was intentionally removed; this is kept as a no-op
+        // for compatibility with older startup logic.
+    },
+
     /* ===== NAVIGATION: ACTIVE SECTION + INDICATOR ===== */
     initNavigation() {
         const navLinks = document.querySelectorAll('.nav-link');
         if (!navLinks.length) return;
 
         const trackedSections = [...navLinks]
-            .map(link => document.getElementById(link.dataset.section))
+            .map(link => link.dataset.section ? document.getElementById(link.dataset.section) : null)
             .filter(Boolean);
+
+        if (!trackedSections.length) return;
+
         let frameRequested = false;
 
         const updateActiveSection = () => {
@@ -120,14 +128,15 @@ const Interactions = {
                 }
             });
 
-            const activeId = activeSection.dataset.section;
+            const activeId = activeSection?.dataset?.section;
+            if (!activeId) return;
+
             navLinks.forEach(link => {
                 const isActive = link.dataset.section === activeId;
                 link.classList.toggle('active', isActive);
                 if (isActive) link.setAttribute('aria-current', 'page');
                 else link.removeAttribute('aria-current');
             });
-            this.moveNavIndicator(activeId);
         };
 
         const requestActiveSectionUpdate = () => {
@@ -139,20 +148,6 @@ const Interactions = {
         window.addEventListener('scroll', requestActiveSectionUpdate, { passive: true });
         window.addEventListener('resize', requestActiveSectionUpdate);
         requestActiveSectionUpdate();
-    },
-
-    moveNavIndicator(sectionId) {
-        const indicator = document.getElementById('nav-indicator');
-        const activeLink = document.querySelector(`.nav-link[data-section="${sectionId}"]`);
-        if (!indicator || !activeLink) return;
-
-        const nav = document.querySelector('.nav');
-        const navRect = nav.getBoundingClientRect();
-        const linkRect = activeLink.getBoundingClientRect();
-
-        indicator.style.width = linkRect.width + 'px';
-        indicator.style.left = (linkRect.left - navRect.left) + 'px';
-        indicator.classList.add('visible');
     },
 
     /* ===== SMOOTH SCROLL ===== */
@@ -300,25 +295,42 @@ const Interactions = {
         }
     },
 
-    /* ===== COPY EMAIL / CONTACT ===== */
-    initCopyEmail() {
-        const btn = document.getElementById('contact-email-btn');
-        if (!btn) return;
+    /* ===== CONTACT FORM / SEND MESSAGE ===== */
+    initContactForm() {
+        const form = document.getElementById('contact-form');
+        if (!form) return;
 
-        btn.addEventListener('click', () => {
-            const email = btn.dataset.email || '';
-            if (!email) return;
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
 
-            // Copy to clipboard
-            if (navigator.clipboard) {
-                navigator.clipboard.writeText(email).then(() => {
-                    this.showToast(DataLoader.translations?.translations?.contact?.copied || 'Email copied to clipboard!');
-                }).catch(() => {
-                    this.fallbackCopy(email);
-                });
-            } else {
-                this.fallbackCopy(email);
+            const nameInput = document.getElementById('contact-name');
+            const emailInput = document.getElementById('contact-email');
+            const messageInput = document.getElementById('contact-message');
+            const email = form.dataset.email || document.getElementById('contact-email-btn')?.dataset.email || '';
+
+            if (!email) {
+                this.showToast('Email address is not available right now.');
+                return;
             }
+
+            const name = nameInput?.value?.trim() || 'Website visitor';
+            const fromEmail = emailInput?.value?.trim() || 'No email provided';
+            const message = messageInput?.value?.trim() || '';
+
+            if (!message) {
+                this.showToast('Please write a message before sending.');
+                messageInput?.focus();
+                return;
+            }
+
+            const subject = encodeURIComponent(`New message from ${name}`);
+            const body = encodeURIComponent(
+                `Name: ${name}\nEmail: ${fromEmail}\n\nMessage:\n${message}`
+            );
+
+            window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+            form.reset();
+            this.showToast('Your email app is opening...');
         });
     },
 

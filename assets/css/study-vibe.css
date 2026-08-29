@@ -38,33 +38,33 @@
 }
 
 [data-theme="light"] {
-    --bg-primary: #f7f4ed;
-    --bg-secondary: #fffdfa;
-    --bg-tertiary: #efe9ff;
-    --surface: rgba(60, 45, 105, .045);
-    --surface-hover: rgba(60, 45, 105, .075);
-    --surface-active: rgba(60, 45, 105, .12);
-    --text-primary: #25213a;
-    --text-secondary: #66627d;
-    --text-tertiary: #918da5;
-    --accent: #7657df;
-    --accent-light: #6f50d6;
-    --accent-secondary: #188ca0;
-    --accent-secondary-light: #13849a;
-    --success: #299b62;
-    --warning: #b7760e;
-    --border: rgba(68, 53, 112, .12);
-    --border-strong: rgba(68, 53, 112, .20);
-    --glow-purple: rgba(118, 87, 223, .14);
-    --glow-cyan: rgba(24, 140, 160, .12);
-    --glow-amber: rgba(226, 165, 37, .17);
-    --gradient-text: linear-gradient(108deg, #6741d4, #1d8da0 58%, #b7791f);
+    --bg-primary: #f5f7fb;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #edf3ff;
+    --surface: rgba(18, 24, 38, .04);
+    --surface-hover: rgba(18, 24, 38, .07);
+    --surface-active: rgba(18, 24, 38, .12);
+    --text-primary: #131b2a;
+    --text-secondary: #3d4a5f;
+    --text-tertiary: #697588;
+    --accent: #6547db;
+    --accent-light: #785ae9;
+    --accent-secondary: #0b7c89;
+    --accent-secondary-light: #0a6975;
+    --success: #1a8a58;
+    --warning: #b9770f;
+    --border: rgba(18, 24, 38, .12);
+    --border-strong: rgba(18, 24, 38, .18);
+    --glow-purple: rgba(101, 71, 219, .14);
+    --glow-cyan: rgba(11, 124, 137, .12);
+    --glow-amber: rgba(185, 119, 15, .16);
+    --gradient-text: linear-gradient(108deg, #5637c8, #0d7d8d 58%, #b3791d);
 }
 
 body {
     background:
-        radial-gradient(circle at 12% 15%, rgba(137, 103, 238, .13), transparent 25rem),
-        radial-gradient(circle at 91% 75%, rgba(46, 201, 203, .10), transparent 27rem),
+        radial-gradient(circle at 12% 15%, rgba(117, 86, 219, .12), transparent 25rem),
+        radial-gradient(circle at 91% 75%, rgba(11, 124, 137, .10), transparent 27rem),
         var(--bg-primary);
 }
 
@@ -89,7 +89,6 @@ body {
 .nav-logo::before { content: '✦'; color: var(--warning); font-size: .78rem; margin-right: 5px; }
 .nav-logo-slash { color: var(--warning); }
 .nav-link.active { color: var(--accent-light); }
-.nav-indicator { height: 3px; border-radius: 5px 5px 0 0; background: linear-gradient(90deg, var(--accent), var(--warning)); }
 
 .hero { min-height: 100vh; padding-top: 98px; }
 .hero-grid { grid-template-columns: 1.18fr .82fr; gap: 48px; position: relative; }

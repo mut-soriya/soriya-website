@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
 
+# Public portfolio pages
+Allow: /index.html
+Allow: /pages/
+
 Sitemap: https://soriya-portfolio.mut-soriya467.workers.dev/sitemap.xml
+Host: soriya-portfolio.mut-soriya467.workers.dev

@@ -1,7 +1,7 @@
 {
   "lang": "en",
   "translations": {
-    "nav": { "home": "HOME", "about": "ABOUT", "skills": "SUBJECTS", "projects": "BUILDS", "journey": "JOURNEY", "contact": "CONTACT" },
+    "nav": { "home": "HOME", "about": "ABOUT", "skills": "SKILLS", "projects": "BUILDS", "journey": "JOURNEY", "contact": "CONTACT" },
     "hero": { "signal": "STUDY SESSION ACTIVE", "greeting": "HELLO, I'M", "role": "IT STUDENT • WEB DEVELOPER • DIGITAL CREATOR", "explore": "EXPLORE BUILDS", "connect": "SEND A NOTE", "scroll": "SCROLL TO STUDY", "online": "STUDYING" },
     "about": { "number": "01 / ABOUT SORIYA MUT", "title": "ABOUT SORIYA MUT", "intro": "Soriya Mut is a male Information Technology student, web developer, and digital creator from Phnom Penh, Cambodia.", "cardTitle": "STUDENT_NOTEBOOK.md", "devUnit": "ABOUT SORIYA MUT / 01", "progressNote": "A PERSONAL LEARNING SNAPSHOT — NOT A FORMAL QUALIFICATION" },
     "skills": { "number": "02 / SKILLS", "title": "SKILLS AND TECHNOLOGIES", "subtitle": "Technologies and software development practices I am learning through practical work." },
@@ -11,7 +11,7 @@
     "achievements": { "number": "06 / MILESTONES", "title": "NEXT MILESTONES", "subtitle": "Small wins and bigger goals still taking shape.", "empty": "MORE MILESTONES LOADING..." },
     "terminal": { "number": "07 / STUDY CONSOLE", "title": "STUDY CONSOLE", "subtitle": "A tiny interactive notebook — no real system commands are executed.", "prompt": "soriya@study:~$", "welcome": "Study space ready. Type 'help' for a few useful notes.", "placeholder": "Try: today, subjects, builds..." },
     "traits": { "number": "08 / HABITS", "title": "STUDY HABITS", "subtitle": "The small practices that shape how I learn, build, and improve." },
-    "contact": { "number": "09 / CONTACT", "title": "CONTACT SORIYA MUT", "subtitle": "Recruiters, developers, students, and collaborators are welcome to connect with Soriya Mut about web development, learning, or a project idea.", "cta": "SEND A NOTE", "encrypted": "OPEN CHANNEL", "ready": "READY TO CONNECT?", "copied": "Email copied to clipboard!" },
+    "contact": { "number": "09 / CONTACT", "title": "CONTACT SORIYA MUT", "subtitle": "For project discussions, collaboration opportunities, or professional inquiries, I’d be happy to connect and learn more about your ideas.", "cta": "MESSAGE ME", "encrypted": "OPEN CHANNEL", "ready": "READY TO CONNECT?", "copied": "Email copied to clipboard!" },
     "hud_float": { "title": "STUDY PULSE", "mode": "MODE", "focus": "SUBJECT", "qa": "SESSION", "energy": "ENERGY" },
     "footer": { "rights": "All rights reserved.", "tagline": "BUILD • LEARN • GROW", "designed": "DESIGNED AS AN ACTIVE STUDY SPACE" },
     "boot": { "system": "SORIYA.STUDY", "status": "READY" },

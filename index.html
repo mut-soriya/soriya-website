@@ -112,7 +112,7 @@
         <div class="boot-content">
             <div class="boot-logo">
                 <span class="boot-bracket">[</span>
-                <span class="boot-sys" data-i18n="boot.system">SORIYA.STUDY</span>
+                <span class="boot-sys" data-i18n="boot.system">SORIYA.DEV</span>
                 <span class="boot-bracket">]</span>
             </div>
             <div class="boot-lines" id="boot-lines"></div>
@@ -146,12 +146,15 @@
             </a>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#home" class="nav-link active" data-section="home" data-i18n="nav.home" aria-current="page">HOME</a></li>
-                <li><a href="#about" class="nav-link" data-section="about" data-i18n="nav.about">ABOUT</a></li>
-                <li><a href="#skills" class="nav-link" data-section="skills" data-i18n="nav.skills">SKILLS</a></li>
-                <li><a href="#projects" class="nav-link" data-section="projects" data-i18n="nav.projects">PROJECTS</a></li>
-                <li><a href="#journey" class="nav-link" data-section="journey" data-i18n="nav.journey">JOURNEY</a></li>
-                <li><a href="#learning" class="nav-link" data-section="learning">LEARNING</a></li>
-                <li><a href="#contact" class="nav-link" data-section="contact" data-i18n="nav.contact">CONTACT</a></li>
+                <li><a href="pages/profile.html" class="nav-link" data-section="profile" data-i18n="nav.about">PROFILE</a></li>
+                <li><a href="pages/skills.html" class="nav-link" data-section="skills" data-i18n="nav.skills">SKILLS</a></li>
+                <li><a href="pages/projects.html" class="nav-link" data-section="projects" data-i18n="nav.projects">PROJECTS</a></li>
+                <li><a href="pages/journey.html" class="nav-link" data-section="journey" data-i18n="nav.journey">JOURNEY</a></li>
+                <li><a href="pages/goals.html" class="nav-link" data-section="goals">GOALS</a></li>
+                <li><a href="pages/terminal.html" class="nav-link" data-section="terminal">TERMINAL</a></li>
+                <li><a href="pages/traits.html" class="nav-link" data-section="traits">TRAITS</a></li>
+                <li><a href="pages/contact.html" class="nav-link" data-section="contact" data-i18n="nav.contact">CONTACT</a></li>
+                <li><a href="resume.html" class="nav-link" data-section="resume">RESUME</a></li>
             </ul>
             <div class="nav-controls">
                 <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
@@ -192,19 +195,19 @@
                         <span data-i18n="hero.signal">STUDY SESSION ACTIVE</span>
                     </div>
                     <p class="hero-greeting reveal" data-reveal-delay="100" data-i18n="hero.greeting">HELLO, I'M</p>
-                    <h1 class="hero-name reveal" data-reveal-delay="200" id="hero-name">SORIYA MUT</h1>
+                    <h1 class="hero-name reveal" data-reveal-delay="200" id="hero-name">Soriya Mut</h1>
                     <div class="hero-role-line reveal" data-reveal-delay="350">
-                        <span class="hero-role" data-i18n="hero.role">IT STUDENT • WEB DEVELOPER • DIGITAL CREATOR</span>
+                        <span class="hero-role" data-i18n="hero.role"></span>
                         <span class="hero-role-cursor">_</span>
                     </div>
                     <p class="hero-desc reveal" data-reveal-delay="500" id="hero-desc"></p>
                     <div class="hero-tags reveal" data-reveal-delay="600" id="hero-tags"></div>
                     <div class="hero-buttons reveal" data-reveal-delay="700">
-                        <a href="#projects" class="btn btn-primary" data-magnetic>
+                        <a href="pages/projects.html" class="btn btn-primary" data-magnetic>
                             <span data-i18n="hero.explore">EXPLORE MY WORK</span>
                             <span class="btn-arrow">↗</span>
                         </a>
-                        <a href="#contact" class="btn btn-secondary" data-magnetic>
+                        <a href="pages/contact.html" class="btn btn-secondary" data-magnetic>
                             <span data-i18n="hero.connect">LET'S CONNECT</span>
                             <span class="btn-arrow">→</span>
                         </a>
@@ -257,235 +260,98 @@
             </div>
         </section>
 
-        <!-- ===== ABOUT SECTION ===== -->
-        <section class="about section" id="about" data-section="about">
+        <section class="home-quick-nav reveal" data-reveal-delay="800">
             <div class="section-header reveal">
-                <span class="section-number" data-i18n="about.number">01 / PROFILE</span>
-                <h2 class="section-title" data-i18n="about.title">MORE THAN JUST A STUDENT</h2>
+                <span class="section-number">00 / EXPLORE</span>
+                <h2 class="section-title">DEVELOPER HUB</h2>
             </div>
-            <div class="about-grid">
-                <div class="about-text reveal" data-reveal-delay="100">
-                    <p class="about-intro" id="about-intro"></p>
-                    <p class="about-paragraph" id="about-paragraph"></p>
-                    <div class="about-cards" id="about-cards"></div>
-                </div>
-                <div class="about-visual reveal" data-reveal-delay="200">
-                    <div class="dev-card" data-tilt>
-                        <div class="dev-card-header">
-                            <span class="dev-card-title" data-i18n="about.cardTitle">CHARACTER_PROFILE.exe</span>
-                            <span class="dev-card-status">
-                                <span class="dev-card-dot"></span>
-                                ONLINE
-                            </span>
-                        </div>
-                        <div class="dev-card-avatar" id="dev-card-avatar">
-                            <span id="dev-card-initials">SM</span>
-                        </div>
-                        <div class="dev-card-body" id="dev-card-body"></div>
-                        <div class="dev-card-footer">
-                            <span class="dev-card-badge">STUDY NOTES / ACTIVE</span>
-                            <span class="dev-card-note" data-i18n="about.progressNote">VISUAL PROGRESS INDICATOR — NOT A REAL QUALIFICATION</span>
-                        </div>
+
+            <div class="hub-shell" aria-label="Developer hub navigation stream">
+                <div class="hub-track">
+                    <div class="hub-group">
+                        <a href="pages/profile.html" class="hub-item">
+                            <span class="hub-index">01</span>
+                            <strong>PROFILE</strong>
+                            <small>About Me</small>
+                        </a>
+                        <a href="pages/skills.html" class="hub-item">
+                            <span class="hub-index">02</span>
+                            <strong>SKILLS</strong>
+                            <small>Tech Arsenal</small>
+                        </a>
+                        <a href="pages/projects.html" class="hub-item">
+                            <span class="hub-index">03</span>
+                            <strong>PROJECTS</strong>
+                            <small>My Builds</small>
+                        </a>
+                        <a href="pages/journey.html" class="hub-item">
+                            <span class="hub-index">05</span>
+                            <strong>JOURNEY</strong>
+                            <small>My Path</small>
+                        </a>
+                        <a href="pages/goals.html" class="hub-item">
+                            <span class="hub-index">06</span>
+                            <strong>GOALS</strong>
+                            <small>Next Missions</small>
+                        </a>
+                        <a href="pages/terminal.html" class="hub-item">
+                            <span class="hub-index">07</span>
+                            <strong>TERMINAL</strong>
+                            <small>Console</small>
+                        </a>
+                        <a href="pages/traits.html" class="hub-item">
+                            <span class="hub-index">08</span>
+                            <strong>TRAITS</strong>
+                            <small>My Style</small>
+                        </a>
+                        <a href="pages/contact.html" class="hub-item">
+                            <span class="hub-index">09</span>
+                            <strong>CONTACT</strong>
+                            <small>Let's Connect</small>
+                        </a>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== SKILLS SECTION ===== -->
-        <section class="skills section" id="skills" data-section="skills">
-            <div class="section-header reveal">
-                <span class="section-number" data-i18n="skills.number">02 / ARSENAL</span>
-                <h2 class="section-title" data-i18n="skills.title">MY TECH ARSENAL</h2>
-                <p class="section-subtitle" data-i18n="skills.subtitle">Tools and concepts I'm learning through practice.</p>
-            </div>
-            <div class="skills-grid" id="skills-grid"></div>
-        </section>
-
-        <!-- ===== PROJECTS SECTION ===== -->
-        <section class="projects section" id="projects" data-section="projects">
-            <div class="section-header reveal">
-                <span class="section-number" data-i18n="projects.number">03 / BUILDS</span>
-                <h2 class="section-title" data-i18n="projects.title">THINGS I'VE BUILT</h2>
-                <p class="section-subtitle" data-i18n="projects.subtitle">Small steps, real practice, and experiments that become better over time.</p>
-            </div>
-            <div class="projects-grid" id="projects-grid"></div>
-        </section>
-
-        <!-- ===== SYSTEM HUD SECTION ===== -->
-        <section class="syshud section" id="syshud" data-section="syshud">
-            <div class="section-header reveal">
-                <span class="section-number" data-i18n="hud.number">04 / LIVE HUD</span>
-                <h2 class="section-title" data-i18n="hud.title">SYSTEM STATUS</h2>
-            </div>
-            <div class="syshud-panel reveal" data-reveal-delay="100">
-                <div class="syshud-status">
-                    <span class="syshud-status-dot"></span>
-                    <span data-i18n="hud.status">PORTFOLIO ONLINE</span>
-                </div>
-                <div class="syshud-grid" id="syshud-grid"></div>
-            </div>
-        </section>
-
-        <!-- ===== JOURNEY SECTION ===== -->
-        <section class="journey section" id="journey" data-section="journey">
-            <div class="section-header reveal">
-                <span class="section-number" data-i18n="journey.number">05 / EDUCATION</span>
-                <h2 class="section-title" data-i18n="journey.title">EDUCATION AND LEARNING JOURNEY</h2>
-                <p class="section-subtitle" data-i18n="journey.subtitle">Soriya Mut's Information Technology education and learning path in Cambodia.</p>
-            </div>
-            <div class="timeline" id="timeline"></div>
-        </section>
-
-        <!-- ===== ACHIEVEMENTS SECTION ===== -->
-        <section class="achievements section" id="achievements" data-section="achievements">
-            <div class="section-header reveal">
-                <span class="section-number" data-i18n="achievements.number">06 / NEXT QUESTS</span>
-                <h2 class="section-title" data-i18n="achievements.title">NEXT LEVEL</h2>
-                <p class="section-subtitle" data-i18n="achievements.subtitle">Milestones I'm working toward.</p>
-            </div>
-            <div class="achievements-content" id="achievements-content"></div>
-        </section>
-
-        <!-- ===== TERMINAL SECTION ===== -->
-        <section class="terminal-section section" id="terminal-section" data-section="terminal">
-            <div class="section-header reveal">
-                <span class="section-number" data-i18n="terminal.number">07 / CONSOLE</span>
-                <h2 class="section-title" data-i18n="terminal.title">DEVELOPER TERMINAL</h2>
-                <p class="section-subtitle" data-i18n="terminal.subtitle">Interactive portfolio information — no real system commands are executed.</p>
-            </div>
-            <div class="terminal-window reveal" data-reveal-delay="100">
-                <div class="terminal-header">
-                    <span class="terminal-dots">
-                        <span class="dot dot-red"></span>
-                        <span class="dot dot-yellow"></span>
-                        <span class="dot dot-green"></span>
-                    </span>
-                    <span class="terminal-title">SORIYA STUDY CONSOLE</span>
-                </div>
-                <div class="terminal-body" id="terminal-body" role="log" aria-live="polite">
-                    <div class="terminal-output" id="terminal-output"></div>
-                    <div class="terminal-input-line">
-                        <span class="terminal-prompt" id="terminal-prompt">soriya@portfolio:~$</span>
-                        <input type="text" class="terminal-input" id="terminal-input" autocomplete="off" spellcheck="false" data-i18n-placeholder="terminal.placeholder" placeholder="Type a command...">
-                        <span class="terminal-cursor" id="terminal-cursor"></span>
+                    <div class="hub-group" aria-hidden="true">
+                        <a href="pages/profile.html" class="hub-item">
+                            <span class="hub-index">01</span>
+                            <strong>PROFILE</strong>
+                            <small>About Me</small>
+                        </a>
+                        <a href="pages/skills.html" class="hub-item">
+                            <span class="hub-index">02</span>
+                            <strong>SKILLS</strong>
+                            <small>Tech Arsenal</small>
+                        </a>
+                        <a href="pages/projects.html" class="hub-item">
+                            <span class="hub-index">03</span>
+                            <strong>PROJECTS</strong>
+                            <small>My Builds</small>
+                        </a>
+                        <a href="pages/journey.html" class="hub-item">
+                            <span class="hub-index">05</span>
+                            <strong>JOURNEY</strong>
+                            <small>My Path</small>
+                        </a>
+                        <a href="pages/goals.html" class="hub-item">
+                            <span class="hub-index">06</span>
+                            <strong>GOALS</strong>
+                            <small>Next Missions</small>
+                        </a>
+                        <a href="pages/terminal.html" class="hub-item">
+                            <span class="hub-index">07</span>
+                            <strong>TERMINAL</strong>
+                            <small>Console</small>
+                        </a>
+                        <a href="pages/traits.html" class="hub-item">
+                            <span class="hub-index">08</span>
+                            <strong>TRAITS</strong>
+                            <small>My Style</small>
+                        </a>
+                        <a href="pages/contact.html" class="hub-item">
+                            <span class="hub-index">09</span>
+                            <strong>CONTACT</strong>
+                            <small>Let's Connect</small>
+                        </a>
                     </div>
-                </div>
-                <div class="terminal-quick-commands" id="terminal-quick-commands">
-                    <button class="terminal-cmd-btn" data-cmd="today">today</button>
-                    <button class="terminal-cmd-btn" data-cmd="subjects">subjects</button>
-                    <button class="terminal-cmd-btn" data-cmd="builds">builds</button>
-                    <button class="terminal-cmd-btn" data-cmd="goals">goals</button>
-                    <button class="terminal-cmd-btn" data-cmd="contact">contact</button>
-                    <button class="terminal-cmd-btn" data-cmd="help">help</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== TRAITS SECTION ===== -->
-        <section class="traits section" id="traits" data-section="traits">
-            <div class="section-header reveal">
-                <span class="section-number" data-i18n="traits.number">08 / TRAITS</span>
-                <h2 class="section-title" data-i18n="traits.title">WHAT MAKES ME DIFFERENT</h2>
-                <p class="section-subtitle" data-i18n="traits.subtitle">The qualities that shape how I learn and build.</p>
-            </div>
-            <div class="traits-grid" id="traits-grid"></div>
-        </section>
-
-        <!-- ===== LEARNING AND CAPABILITIES ===== -->
-        <section class="learning section" id="learning" data-section="learning">
-            <div class="section-header reveal">
-                <span class="section-number">09 / CURRENT FOCUS</span>
-                <h2 class="section-title">WHAT I AM LEARNING NOW</h2>
-                <p class="section-subtitle">Soriya Mut is continuously improving through practical study, small experiments, and project work.</p>
-            </div>
-            <div class="learning-grid">
-                <article class="learning-panel reveal">
-                    <h3>Currently Learning</h3>
-                    <p>I am building stronger foundations in web development, programming, software development, databases, and quality assurance.</p>
-                    <ul>
-                        <li>JavaScript and interactive web interfaces</li>
-                        <li>Python and Flask web applications</li>
-                        <li>SQL and relational database design</li>
-                        <li>Responsive design and QA testing</li>
-                    </ul>
-                </article>
-                <article class="learning-panel reveal" data-reveal-delay="100">
-                    <h3>What I Can Build</h3>
-                    <p>As an IT student and aspiring web developer, I enjoy creating focused projects that solve clear problems.</p>
-                    <ul>
-                        <li>Personal portfolio websites</li>
-                        <li>Responsive landing pages and interfaces</li>
-                        <li>Simple web applications for student projects</li>
-                        <li>Small Python, Flask, and SQL applications</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <!-- ===== PERSONAL BRAND ===== -->
-        <section class="personal-brand section" id="about-soriya" data-section="about-soriya">
-            <div class="section-header reveal">
-                <span class="section-number">10 / PERSONAL NOTE</span>
-                <h2 class="section-title">WHY I CREATED THIS PORTFOLIO</h2>
-            </div>
-            <div class="personal-brand-content reveal">
-                <p>This is the official personal portfolio of Soriya Mut, a male Information Technology student, web developer, and digital creator based in Phnom Penh, Cambodia.</p>
-                <p>It documents his own projects, skills, education, and learning journey at Passerelles Numériques Cambodia. This identity and biography describe this Soriya Mut only and should not be confused with another person who has the same name.</p>
-                <p>Soriya is building his skills through programming, web development, software development, and quality assurance. The portfolio will grow as he completes more practical projects.</p>
-            </div>
-        </section>
-
-        <!-- ===== FAQ ===== -->
-        <section class="faq section" id="faq" data-section="faq">
-            <div class="section-header reveal">
-                <span class="section-number">11 / QUICK ANSWERS</span>
-                <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
-            </div>
-            <div class="faq-list">
-                <details class="faq-item reveal">
-                    <summary>Who is Soriya Mut?</summary>
-                    <p>Soriya Mut is an IT student and aspiring web developer in Cambodia who builds practical projects while learning programming and software development.</p>
-                </details>
-                <details class="faq-item reveal">
-                    <summary>What does Soriya Mut study?</summary>
-                    <p>Soriya studies Information Technology, web development, programming, databases, software development, and quality assurance at Passerelles Numériques Cambodia.</p>
-                </details>
-                <details class="faq-item reveal">
-                    <summary>What technologies does Soriya use?</summary>
-                    <p>Soriya is learning and building with HTML, CSS, JavaScript, Python, Flask, Git, SQL, responsive design, and QA testing.</p>
-                </details>
-                <details class="faq-item reveal">
-                    <summary>What projects has Soriya built?</summary>
-                    <p>The portfolio includes a Student Study Management System, Portfolio Study Space, and Library Management System. Project status and technologies are listed in the Projects section.</p>
-                </details>
-                <details class="faq-item reveal">
-                    <summary>How can I contact Soriya Mut?</summary>
-                    <p>Use the Contact section to connect by email, GitHub, LinkedIn, or Telegram.</p>
-                </details>
-            </div>
-        </section>
-
-        <!-- ===== CONTACT SECTION ===== -->
-        <section class="contact section" id="contact" data-section="contact">
-            <div class="section-header reveal">
-                <span class="section-number" data-i18n="contact.number">12 / CONTACT</span>
-                <h2 class="section-title" data-i18n="contact.title">CONTACT SORIYA MUT</h2>
-                <p class="section-subtitle" id="contact-subtitle"></p>
-            </div>
-            <div class="contact-content reveal" data-reveal-delay="100">
-                <div class="contact-info">
-                    <div class="contact-encryption">
-                        <span class="contact-enc-label">OPEN_CHANNELS</span>
-                        <span class="contact-enc-status" data-i18n="contact.encrypted">ENCRYPTED</span>
-                    </div>
-                    <div class="contact-ready">
-                        <span data-i18n="contact.ready">READY TO CONNECT?</span>
-                    </div>
-                    <button class="btn btn-primary contact-email-btn" id="contact-email-btn" data-magnetic>
-                        <span data-i18n="contact.cta">OPEN EMAIL</span>
-                        <span class="btn-arrow">↗</span>
-                    </button>
-                    <div class="contact-socials" id="contact-socials"></div>
                 </div>
             </div>
         </section>

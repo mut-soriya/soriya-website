@@ -3,6 +3,11 @@
    data-loader.js — JSON Data Loading & DOM Population
    ============================================ */
 
+const resolvePortfolioPath = (path) => {
+    const base = window.PORTFOLIO_BASE || './';
+    return `${base}${path.replace(/^\.\//, '').replace(/^\//, '')}`;
+};
+
 const DataLoader = {
     data: {},
     translations: {},
@@ -24,7 +29,7 @@ const DataLoader = {
 
         try {
             const responses = await Promise.all(
-                files.map(f => fetch(f).then(r => {
+                files.map(f => fetch(resolvePortfolioPath(f)).then(r => {
                     if (!r.ok) throw new Error(`Failed to load ${f}`);
                     return r.json();
                 }))
@@ -47,7 +52,7 @@ const DataLoader = {
     /* ===== LOAD TRANSLATIONS ===== */
     async loadTranslations(lang) {
         try {
-            const res = await fetch(`data/${lang}.json`);
+            const res = await fetch(resolvePortfolioPath(`data/${lang}.json`));
             if (!res.ok) throw new Error(`Failed to load ${lang}.json`);
             this.translations = await res.json();
             this.currentLang = lang;
@@ -55,7 +60,7 @@ const DataLoader = {
             console.error('Translation load error:', err);
             // Fallback to English
             if (lang !== 'en') {
-                const res = await fetch('data/en.json');
+                const res = await fetch(resolvePortfolioPath('data/en.json'));
                 this.translations = await res.json();
                 this.currentLang = 'en';
             }
@@ -82,7 +87,10 @@ const DataLoader = {
 
         // Hero
         const heroName = document.getElementById('hero-name');
-        if (heroName) heroName.textContent = `${p.name} — IT STUDENT & WEB DEVELOPER`;
+        if (heroName) heroName.textContent = p.name;
+
+        const heroRole = document.querySelector('.hero-role');
+        if (heroRole) heroRole.textContent = '';
 
         const heroDesc = document.getElementById('hero-desc');
         if (heroDesc) heroDesc.textContent = p.description;
