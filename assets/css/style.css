@@ -115,7 +115,19 @@ body {
     transition: background var(--transition-slow), color var(--transition-slow);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    --page-gif: none;
 }
+
+body.page-home { --page-gif: url("https://i.makeagif.com/media/2-02-2022/8qXJHt.gif"); }
+body.page-profile { --page-gif: url("https://giffiles.alphacoders.com/220/220710.gif"); }
+body.page-skills { --page-gif: url("https://i.pinimg.com/originals/8b/a2/c4/8ba2c4aa8d5bac8528679f0bcfc6c3d1.gif"); }
+body.page-projects { --page-gif: url("https://i.pinimg.com/originals/88/2c/c8/882cc8417b025d735a72d4f273bba103.gif"); }
+body.page-journey { --page-gif: url("https://giffiles.alphacoders.com/219/219656.gif"); }
+body.page-goals { --page-gif: url("https://i.pinimg.com/originals/86/a0/47/86a047a95320407ba81f78ae60a1f5c5.gif"); }
+body.page-terminal { --page-gif: url("https://giffiles.alphacoders.com/142/142224.gif"); }
+body.page-traits { --page-gif: url("https://motionbgs.com/dl/gif/1480"); }
+body.page-contact { --page-gif: url("https://www.icegif.com/wp-content/uploads/2022/08/icegif-1433.gif"); }
+body.page-resume { --page-gif: url("https://i.makeagif.com/media/8-08-2020/hgcVDv.gif"); }
 
 a {
     color: inherit;
@@ -198,6 +210,29 @@ input {
     z-index: var(--z-bg);
     overflow: hidden;
     pointer-events: none;
+}
+
+.bg-layer::before {
+    content: "";
+    position: absolute;
+    inset: -12%;
+    background-image: var(--page-gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.18;
+    filter: saturate(1.3) contrast(1.15) blur(2px);
+    mix-blend-mode: screen;
+    animation: bgGifFloat 22s ease-in-out infinite alternate;
+}
+
+@keyframes bgGifFloat {
+    0% {
+        transform: scale(1) translate3d(0, 0, 0);
+    }
+    100% {
+        transform: scale(1.15) translate3d(-2%, 2%, 0);
+    }
 }
 
 .bg-grid {
